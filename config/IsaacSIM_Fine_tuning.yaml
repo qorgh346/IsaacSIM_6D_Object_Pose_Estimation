@@ -1,0 +1,109 @@
+# datasets
+dataset:
+  obj_c: 2  # number of categories
+  dataset: "Real"  # CAMERA or CAMERA+Real
+  dataset_dir: "/home/songoh/hojun_ws/data"  # path to the dataset
+  detection_dir: "/home/songoh/hojun_ws/GPV_Pose/results"  # path to detection results
+  per_obj: ""  # only train a specified object
+
+# dynamic zoom in
+dynamic_zoom:
+  DZI_PAD_SCALE: 1.5
+  DZI_TYPE: "uniform"
+  DZI_SCALE_RATIO: 0.25
+  DZI_SHIFT_RATIO: 0.25
+
+# input parameters
+input:
+  img_size: 256  # size of the cropped image
+
+# data augmentation parameters
+augmentation:
+  roi_mask_r: 3  # radius for mask augmentation
+  roi_mask_pro: 0.5  # probability to augment mask
+  aug_pc_pro: 0.2  # probability to augment point cloud
+  aug_pc_r: 0.05  # max change 5% of the point
+  aug_rt_pro: 0.3  # probability to augment rotation
+  aug_bb_pro: 0.3  # probability to augment size
+  aug_bc_pro: 0.3  # box cage based augmentation (for bowl, mug)
+
+# pose network
+pose_network:
+  feat_c_R: 1282  # input channel of rotation
+  R_c: 4  # output channel of rotation (confidence(1) + rotation(3))
+  feat_c_ts: 1285  # input channel of translation and size
+  Ts_c: 6  # output channel of translation (3) + size (3)
+  feat_face: 768  # input channel for face reconstruction
+  face_recon_c: 30  # distance and normal to each face
+  gcn_sup_num: 7  # support number for gcn
+  gcn_n_num: 10  # neighbor number for gcn
+
+# point selection
+point_selection:
+  random_points: 1028  # number of points selected randomly
+  sample_method: "basic"
+
+# training parameters
+training:
+  train: 1  # 1 for train mode
+  device: "cuda:0"
+  num_workers: 8  # CPU cores for loading dataset
+  batch_size: 24
+  total_epoch: 150  # total epochs in training
+  train_steps: 1000  # number of batches in each epoch
+  accumulate: 1  # real batch size is batch_size x accumulate
+  save_every: 10  # save models every 'save_every' epoch
+  log_every: 100  # save log file every 100 iterations
+  model_save: "output/modelsave_all"  # path to save checkpoint
+  resume: 1  # 1 for resume, 0 for training from scratch
+  resume_model: "[Download best model dir]/model_139.pth"
+  resume_point: 0  # epoch to continue training
+  training_stage_freeze: "face_recon"  # freeze parameters: face_recon, pose_net
+
+# loss parameters
+loss:
+  fsnet_loss_type: "l1"  # l1 or smoothl1
+  rot_1_w: 8.0
+  rot_2_w: 8.0
+  rot_regular: 4.0
+  tran_w: 8.0
+  size_w: 8.0
+  recon_w: 8.0
+  r_con_w: 1.0
+  recon_n_w: 3.0  # normal estimation loss
+  recon_d_w: 3.0  # distance estimation loss
+  recon_v_w: 1.0  # voting loss weight
+  recon_s_w: 0.3  # point sampling loss weight
+  recon_f_w: 1.0  # confidence loss
+  recon_bb_r_w: 1.0  # bbox rotation loss
+  recon_bb_t_w: 1.0  # bbox translation loss
+  recon_bb_s_w: 1.0  # bbox size loss
+  recon_bb_self_w: 1.0  # bbox self
+  mask_w: 1.0  # object mask loss
+  geo_p_w: 1.0  # geometric point matching loss
+  geo_s_w: 10.0  # geometric symmetry loss
+  geo_f_w: 0.1  # geometric face loss
+  prop_pm_w: 2.0
+  prop_sym_w: 1.0  # for symmetric objects
+  prop_r_reg_w: 1.0  # rotation confidence sum to 1
+
+# evaluation parameters
+evaluation:
+  eval_visualize_pcl: 0  # save point cloud during evaluation
+  eval_inference_only: 0  # inference without evaluation
+
+# optimizer and scheduler
+optimizer:
+  lr: 1e-4  # learning rate
+  lr_pose: 1.0
+  lr_decay_iters: 50  # scheduler parameter
+  lr_scheduler_name: "flat_and_anneal"
+  anneal_method: "cosine"
+  anneal_point: 0.72
+  optimizer_type: "Ranger"
+  weight_decay: 0.0
+  warmup_factor: 0.001
+  warmup_iters: 1000
+  warmup_method: "linear"
+  gamma: 0.1
+  poly_power: 0.9

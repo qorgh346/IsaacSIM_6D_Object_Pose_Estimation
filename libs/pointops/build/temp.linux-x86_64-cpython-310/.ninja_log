@@ -1,0 +1,11 @@
+# ninja log v5
+8	19439	1683890753382389434	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/pointops_api.o	96c9848f831ef131
+11	23262	1683890757210397343	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/random_ball_query/random_ball_query_cuda_kernel.o	6b76db8d673bb5a
+4	23307	1683890757254397435	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/knn_query/knn_query_cuda_kernel.o	9329f46b0f97dc7b
+2	23312	1683890757258397443	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/ball_query/ball_query_cuda_kernel.o	9be2acdfa596737c
+4	23347	1683890757294397517	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/interpolation/interpolation_cuda_kernel.o	46d40417c741f2e6
+3	23492	1683890757438397815	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/grouping/grouping_cuda_kernel.o	158d22dceb7eaa5b
+1	23537	1683890757478397897	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/aggregation/aggregation_cuda_kernel.o	6113090ebb8fe00b
+18	23555	1683890757502397947	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/subtraction/subtraction_cuda_kernel.o	f21e62bc842ff58a
+1	23613	1683890757550398045	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/attention/attention_cuda_kernel.o	c25aed134c2f111d
+13	23808	1683890757746398450	/home/songoh/hojun_ws/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-310/src/sampling/sampling_cuda_kernel.o	a9f4a81564ef4f23

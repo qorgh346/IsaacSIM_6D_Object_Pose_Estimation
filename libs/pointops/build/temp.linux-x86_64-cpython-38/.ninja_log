@@ -1,0 +1,20 @@
+# ninja log v5
+1	7472	1684651980140835163	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/attention/attention_cuda.o	dbd6cb0fe0a4c70e
+2	7621	1684651980288834907	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/ball_query/ball_query_cuda.o	7074943029c05bd
+0	8596	1684651981264833211	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/aggregation/aggregation_cuda.o	d5579a6291ea8d0
+5	8653	1684651981320833113	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda.o	a373bf334af78746
+3	8802	1684651981468832856	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda.o	1d86f2db5ca5031f
+6	9147	1684651981812832258	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/subtraction/subtraction_cuda.o	3bb6da9d6529868e
+4	9286	1684651981952832015	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/random_ball_query/random_ball_query_cuda.o	3bb6fbcd2e87a9c7
+3	9377	1684651982040831862	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/knn_query/knn_query_cuda.o	6fa517fca7bf8e40
+2	9753	1684651982420831202	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda.o	d5b30b3303ec0615
+4	16599	1684651989256819316	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/knn_query/knn_query_cuda_kernel.o	5d738892ae73c99f
+1	16787	1684651989444818990	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/aggregation/aggregation_cuda_kernel.o	12aa612928448dcd
+5	16961	1684651989624818676	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/random_ball_query/random_ball_query_cuda_kernel.o	d50d55011b87dbf8
+6	17064	1684651989724818503	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/subtraction/subtraction_cuda_kernel.o	4af587756f6afa78
+2	17074	1684651989732818489	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/ball_query/ball_query_cuda_kernel.o	82dd49c9f39bdf46
+2	17581	1684651990240817605	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/attention/attention_cuda_kernel.o	53c4446600b6fcfa
+5	17767	1684651990424817284	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda_kernel.o	80a8d5dd454798c9
+3	18427	1684651991084816137	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda_kernel.o	a3093b32b70abd03
+1	18820	1684651991476815455	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda_kernel.o	4badbb094eb5fbe
+4	25733	1684651998388803425	/home/ailab/Downloads/GPV_Pose/libs/pointops/build/temp.linux-x86_64-cpython-38/src/pointops_api.o	83b15900885525ff
