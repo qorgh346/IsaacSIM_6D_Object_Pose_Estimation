@@ -5,7 +5,7 @@
 ## Overview
 - 사전 학습된 **GPV-Pose (CVPR '22)** 모델을 IsaacSIM 데이터셋으로 파인튜닝하여 새로운 도메인에 적용
 
-![전체 모델 구조도](전체_모델_구조도.png)
+![전체 모델 구조도](assets/models.png)
 
 ## Description
 - GPV-Pose를 기반으로 제조/물류 환경에서 6D Object Pose 추정 성능을 개선하기 위한 프로젝트입니다.
@@ -79,7 +79,7 @@ dataset/
 - 다음 경로에 배치:
 ```
 pretrained_models/
-├── fine_tuned_isaccsim.pth
+├── fine_tuned_isaccSim.pth
 ├── gpv_pose_update.pth
 ```
 
@@ -131,9 +131,11 @@ pretrained_models/
 
 ---
 
-## 🎥 Demo Video
-- [데모 영상 링크](#)
+## 학습 데이터 수집 영상
+- [![데이터 수집 과정](https://img.youtube.com/vi/h6-N02f4EH0/0.jpg)](https://www.youtube.com/watch?v=h6-N02f4EH0)
 
+## 정성 평가 결과
+![Result](assets/result.png)
 ---
 
 ## 🤝 Acknowledgment
