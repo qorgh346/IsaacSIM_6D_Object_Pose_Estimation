@@ -12,7 +12,7 @@
 
 ## Features
 - 범주 수준(Category-level) 6D Pose 추정 GPV-Pose 모델을 파인튜닝 하여 제조/물류 도메인에 적용 
-- NVIDIA IsaacSIM을 활용하여 새로운 데이터 수집
+- NVIDIA IsaacSIM을 활용하여 Object Pose 추정 모델 학습을 위한 데이터 수집
 
 ---
 
@@ -32,9 +32,8 @@
 │   ├── PointTransformerV2.py   # PT_V2 - 변경 백본(기하학적 특징 추출기)
 │   ├── PoseNet9D.py            # 메인 네트워크
 ├── result/
-│   ├── CAMERA25/               #(Fine-Tuning 전) 기존 데이터 집합 평가 결과
-│   │   ├── results_val_00000_0000.pkl  # 평가 로그 파일
 │   ├── REAL275/                #(Fine-Tuning 전) 기존 데이터 집합 평가 결과
+│   │   ├── results_val_00000_0000.pkl  # 평가 로그 파일
 │   ├── ISAACSIM/               #(Fine-Tuning 후) 신규 데이터 집합 평가 결과
 ├── pretrained_models/ #사전 학습된 모델 저장
 ```
@@ -139,7 +138,7 @@ pretrained_models/
 ---
 
 ## Acknowledgment
-- 본 구현은 아래 코드들을 활용하여 개발되었습니다:
+- 본 프로젝트는 아래 코드들을 활용하여 구현하였습니다.:
   - [PointTransformerV2](https://github.com/Pointcept/PointTransformerV2.git)
   - [GPV_Pose](https://github.com/lolrudy/GPV_Pose)
   - [3D GCN](https://github.com/chih-hao-lin/3dgcn)
