@@ -3,7 +3,7 @@
 ---
 
 ## Overview
-- 사전 학습된 **[GPV-Pose (CVPR '22)](https://github.com/lolrudy/GPV_Pose)** 모델을 IsaacSIM 데이터셋으로 파인튜닝하여 새로운 도메인에 적용
+- 사전 학습된 **[GPV-Pose (CVPR '22)](https://github.com/lolrudy/GPV_Pose)** 모델을 직접 수집한 IsaacSIM 데이터셋으로 파인튜닝하여 새로운 도메인에 적용
 
 ![전체 모델 구조도](assets/models.png)
 
