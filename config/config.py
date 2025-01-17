@@ -35,6 +35,10 @@ flags.DEFINE_integer('feat_c_ts', 1285, 'input channel of translation and size')
 flags.DEFINE_integer('Ts_c', 6,  'output channel of translation (3) + size (3)')
 flags.DEFINE_integer('feat_face',768, 'input channel of the face recon')
 
+
+# Training Point TransformerV2
+flags.DEFINE_string('geo_feature_extractor', 'gcn3d', 'PTv2 or gcn3d')
+
 flags.DEFINE_integer('face_recon_c', 6 * 5, 'for every point, we predict its distance and normal to each face')
 #  the storage form is 6*3 normal, then the following 6 parametes distance, the last 6 parameters confidence
 flags.DEFINE_integer('gcn_sup_num', 7, 'support number for gcn')
