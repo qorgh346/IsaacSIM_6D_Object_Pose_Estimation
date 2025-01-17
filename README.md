@@ -138,7 +138,7 @@ pretrained_models/
 ---
 
 ## Acknowledgment
-- 본 프로젝트는 아래 코드들을 활용하여 구현하였습니다.:
+- 본 프로젝트는 아래 코드들을 활용하여 구현하였습니다.
   - [PointTransformerV2](https://github.com/Pointcept/PointTransformerV2.git)
   - [GPV_Pose](https://github.com/lolrudy/GPV_Pose)
   - [3D GCN](https://github.com/chih-hao-lin/3dgcn)
