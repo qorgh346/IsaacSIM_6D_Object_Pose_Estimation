@@ -138,11 +138,12 @@ pretrained_models/
 ![Result](assets/result.png)
 ---
 
-## 🤝 Acknowledgment
-- 본 구현은 다음의 코드베이스를 활용하여 개발되었습니다:
-  - [GPV_Pose](#)
-  - [PointTransformerV2](#)
-  - [FS-Net](#)
-  - [DualPoseNet](#)
-  - [SPD](#)
+## Acknowledgment
+- 본 구현은 아래 코드들을 활용하여 개발되었습니다:
+  - [PointTransformerV2](https://github.com/Pointcept/PointTransformerV2.git)
+  - [GPV_Pose](https://github.com/lolrudy/GPV_Pose)
+  - [3D GCN](https://github.com/chih-hao-lin/3dgcn)
+  - [FS-Net](https://github.com/DC1991/FS_Net)
+  - [DualPoseNet](https://github.com/Gorilla-Lab-SCUT/DualPoseNet)
+  - [SPD](https://github.com/mentian/object-deformnet)
 
