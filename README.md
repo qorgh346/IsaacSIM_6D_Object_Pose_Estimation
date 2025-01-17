@@ -7,12 +7,8 @@
 
 ![전체 모델 구조도](전체_모델_구조도.png)
 
----
-
 ## Description
 - GPV-Pose를 기반으로 제조/물류 환경에서 6D Object Pose 추정 성능을 개선하기 위한 프로젝트입니다.
-
----
 
 ## Features
 - 범주 수준(Category-level) 6D Pose 추정 GPV-Pose 모델을 파인튜닝 하여 제조/물류 도메인에 적용 
